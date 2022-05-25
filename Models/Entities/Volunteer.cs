@@ -18,4 +18,5 @@ public int PhoneNumber { get; set; }
 
 public VolunteerStatus Status { get; set; }
 
+public List<Event> Events { get; set; }
 }

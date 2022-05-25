@@ -22,12 +22,18 @@ namespace CbsStudents.Data
             this.UsersSeed(builder);
             this.SeedPosts(builder);
             this.SeedComments(builder);
+            this.SeedVolunteers(builder);
+            this.SeedEvents(builder);
+
         }
 
         public DbSet<Post> Posts { get; set; }
 
         public DbSet<cbsStudents.Models.Entities.Comment> Comment { get; set; }
 
+        public DbSet<cbsStudents.Models.Entities.Volunteer> Volunteer { get; set; }
+
+        public DbSet<cbsStudents.Models.Entities.Event> Event { get; set; }
 
         private void UsersSeed(ModelBuilder builder)
         {
@@ -74,6 +80,25 @@ namespace CbsStudents.Data
             );
         }
 
-        public DbSet<cbsStudents.Models.Entities.Volunteer> Volunteer { get; set; }
+        private void SeedVolunteers(ModelBuilder builder)
+        {
+            builder.Entity<Volunteer>().HasData(
+                new Volunteer() { Id = 2, Name = "Tina", LastName = "Lee", Email = "tina@gmail.com", PhoneNumber = 41236578, Status = VolunteerStatus.ACCEPTED },
+                new Volunteer() { Id = 3, Name = "Rob", LastName = "Chee", Email = "rob@gmail.com", PhoneNumber = 41231258, Status = VolunteerStatus.ACCEPTED },
+                new Volunteer() { Id = 4, Name = "Jan", LastName = "Bo", Email = "jan@gmail.com", PhoneNumber = 74236578, Status = VolunteerStatus.ACCEPTED },
+                new Volunteer() { Id = 5, Name = "Bert", LastName = "Vert", Email = "bert@gmail.com", PhoneNumber = 32236578, Status = VolunteerStatus.ACCEPTED }
+
+            );
+        }
+
+        private void SeedEvents(ModelBuilder builder)
+        {
+            builder.Entity<Event>().HasData(
+                new Event() { EventId = 1, Title = "Summer Party", Description = "Party during the summer", Date = DateTime.Parse("2022-01-03"), VolunteerId = 1 },
+                new Event() { EventId = 2, Title = "Christmas Party", Description = "Party for Christmas", Date = DateTime.Parse("2022-12-23"), VolunteerId = 2 },
+                new Event() { EventId = 3, Title = "Birthay Party", Description = "Ben's birthday party", Date = DateTime.Parse("2022-06-03"), VolunteerId = 1 }
+            );
+        }
+
     }
 }

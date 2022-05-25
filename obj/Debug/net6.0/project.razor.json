@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Events\\Details.cshtml",
+      "TargetPath": "Views\\Events\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -16338,6 +16343,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Events\\Edit.cshtml",
+      "TargetPath": "Views\\Events\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Posts\\Test.cshtml",
       "TargetPath": "Views\\Posts\\Test.cshtml",
       "FileKind": "mvc"
@@ -16350,6 +16360,11 @@
     {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Events\\Index.cshtml",
+      "TargetPath": "Views\\Events\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16370,6 +16385,11 @@
     {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Events\\Create.cshtml",
+      "TargetPath": "Views\\Events\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16445,6 +16465,11 @@
     {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Posts\\_CreateEditPost.cshtml",
       "TargetPath": "Views\\Posts\\_CreateEditPost.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Events\\Delete.cshtml",
+      "TargetPath": "Views\\Events\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
