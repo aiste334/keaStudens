@@ -73,5 +73,7 @@ namespace CbsStudents.Data
                 new Comment() { CommentId = 4, Text = "Bye", TimeStamp = DateTime.Now, PostId = 3, UserId = "1" }
             );
         }
+
+        public DbSet<cbsStudents.Models.Entities.Volunteer> Volunteer { get; set; }
     }
 }

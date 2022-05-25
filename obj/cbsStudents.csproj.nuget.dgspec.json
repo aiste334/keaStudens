@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aiste\\Documents\\GitHub\\dotNetCbs\\cbsStudents.csproj": {}
+    "C:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\cbsStudents.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aiste\\Documents\\GitHub\\dotNetCbs\\cbsStudents.csproj": {
+    "C:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\cbsStudents.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aiste\\Documents\\GitHub\\dotNetCbs\\cbsStudents.csproj",
+        "projectUniqueName": "C:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\cbsStudents.csproj",
         "projectName": "cbsStudents",
-        "projectPath": "C:\\Users\\Aiste\\Documents\\GitHub\\dotNetCbs\\cbsStudents.csproj",
+        "projectPath": "C:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\cbsStudents.csproj",
         "packagesPath": "C:\\Users\\Aiste\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aiste\\Documents\\GitHub\\dotNetCbs\\obj\\",
+        "outputPath": "C:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -58,15 +58,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SQLite": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -76,7 +76,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.5, )"
             }
           },
           "imports": [

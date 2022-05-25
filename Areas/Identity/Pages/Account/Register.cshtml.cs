@@ -25,6 +25,10 @@ namespace cbsStudents.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IUserStore<IdentityUser> _firstNameStore;
+
+        private readonly IUserStore<IdentityUser> _lastNameStore;
+
         private readonly IUserStore<IdentityUser> _userStore;
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
@@ -70,6 +74,18 @@ namespace cbsStudents.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+
+             [Required]
+            //[FirstName]
+            [Display(Name = "FirstName")]
+            public string FirstName { get; set; }
+
+             [Required]
+            //[FirstName]
+            [Display(Name = "LastName")]
+            public string LastName { get; set; }
+
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -99,6 +115,19 @@ namespace cbsStudents.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
         }
 
+        private async Task LoadAsync(CbsUser user)
+        {
+            var email = await _userManager.GetEmailAsync(user);
+
+            Input = new InputModel
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                Password = user.PasswordHash
+            };
+        }
+
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -113,10 +142,11 @@ namespace cbsStudents.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
-
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
+
+
 
                 if (result.Succeeded)
                 {

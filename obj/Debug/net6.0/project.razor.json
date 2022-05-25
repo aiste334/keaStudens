@@ -16358,6 +16358,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Volunteer\\Create.cshtml",
+      "TargetPath": "Views\\Volunteer\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Test\\WannaPlayDad2.cshtml",
       "TargetPath": "Views\\Test\\WannaPlayDad2.cshtml",
       "FileKind": "mvc"
@@ -16393,6 +16398,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Volunteer\\Edit.cshtml",
+      "TargetPath": "Views\\Volunteer\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Volunteer\\Delete.cshtml",
+      "TargetPath": "Views\\Volunteer\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -16408,8 +16423,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Volunteer\\Details.cshtml",
+      "TargetPath": "Views\\Volunteer\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Volunteer\\Index.cshtml",
+      "TargetPath": "Views\\Volunteer\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
