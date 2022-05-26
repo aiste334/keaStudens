@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CbsStudents.Data;
 using cbsStudents.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace cbsStudents.Controllers
 {
+    [Authorize]
     public class EventsController : Controller
     {
         private readonly CbsStudentsContext _context;
@@ -19,14 +22,14 @@ namespace cbsStudents.Controllers
             _context = context;
         }
 
-        // GET: Events
+         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var cbsStudentsContext = _context.Event.Include(e => e.Volunteer);
             return View(await cbsStudentsContext.ToListAsync());
         }
 
-        // GET: Events/Details/5
+         [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Event == null)

@@ -33,7 +33,7 @@ namespace cbsStudents.Controllers
                 return NotFound();
             }
 
-            var volunteer = await _context.Volunteer
+            var volunteer = await _context.Volunteer.Include(m => m.Events)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (volunteer == null)
             {
