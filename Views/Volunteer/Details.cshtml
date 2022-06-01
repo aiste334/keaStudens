@@ -48,6 +48,17 @@
 
 
 </div>
+<h1>Events:</h1>
+@foreach (var e in Model.Events)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <h3>
+                <a href="~/Events/Details/@e.EventId">@e.Title</a>
+            </h3>
+        </div>
+    </div>
+}
 
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |

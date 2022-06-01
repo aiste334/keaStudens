@@ -24,6 +24,7 @@ namespace CbsStudents.Data
             this.SeedComments(builder);
             this.SeedVolunteers(builder);
             this.SeedEvents(builder);
+            this.SeedTasks(builder);
 
         }
 
@@ -87,7 +88,6 @@ namespace CbsStudents.Data
                 new Volunteer() { Id = 3, Name = "Rob", LastName = "Chee", Email = "rob@gmail.com", PhoneNumber = 41231258, Status = VolunteerStatus.ACCEPTED },
                 new Volunteer() { Id = 4, Name = "Jan", LastName = "Bo", Email = "jan@gmail.com", PhoneNumber = 74236578, Status = VolunteerStatus.ACCEPTED },
                 new Volunteer() { Id = 5, Name = "Bert", LastName = "Vert", Email = "bert@gmail.com", PhoneNumber = 32236578, Status = VolunteerStatus.ACCEPTED }
-
             );
         }
 
@@ -102,5 +102,16 @@ namespace CbsStudents.Data
 
         public DbSet<cbsStudents.Models.Entities.Task> Task { get; set; }
 
+
+         private void SeedTasks(ModelBuilder builder)
+        {
+            builder.Entity<cbsStudents.Models.Entities.Task>().HasData(
+                new cbsStudents.Models.Entities.Task() { Id = 3, Name = "Buy decorations", IsComplete = false, VolunteerId = 1 },
+                new cbsStudents.Models.Entities.Task() { Id = 4, Name = "Buy food", IsComplete = false, VolunteerId = 1 },
+                new cbsStudents.Models.Entities.Task() { Id = 5, Name = "Invite guests", IsComplete = false, VolunteerId = 2 },
+                new cbsStudents.Models.Entities.Task() { Id = 6, Name = "Choose music", IsComplete = false, VolunteerId = 3 },
+                new cbsStudents.Models.Entities.Task() { Id = 7, Name = "Book venue", IsComplete = false, VolunteerId = 4 }
+            );
+        }
     }
 }

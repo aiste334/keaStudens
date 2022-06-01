@@ -25,10 +25,6 @@ namespace cbsStudents.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly IUserStore<IdentityUser> _firstNameStore;
-
-        private readonly IUserStore<IdentityUser> _lastNameStore;
-
         private readonly IUserStore<IdentityUser> _userStore;
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
@@ -75,17 +71,6 @@ namespace cbsStudents.Areas.Identity.Pages.Account
         public class InputModel
         {
 
-             [Required]
-            //[FirstName]
-            [Display(Name = "FirstName")]
-            public string FirstName { get; set; }
-
-             [Required]
-            //[FirstName]
-            [Display(Name = "LastName")]
-            public string LastName { get; set; }
-
-
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -121,8 +106,6 @@ namespace cbsStudents.Areas.Identity.Pages.Account
 
             Input = new InputModel
             {
-                FirstName = user.FirstName,
-                LastName = user.LastName,
                 Email = user.Email,
                 Password = user.PasswordHash
             };

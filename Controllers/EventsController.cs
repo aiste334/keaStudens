@@ -98,6 +98,11 @@ namespace cbsStudents.Controllers
         {
             if (id != @event.EventId)
             {
+                Console.WriteLine("===");
+                Console.WriteLine(id);
+                Console.WriteLine(@event.EventId);
+                Console.WriteLine(@event.Title);
+                Console.WriteLine("===");
                 return NotFound();
             }
 
@@ -122,7 +127,7 @@ namespace cbsStudents.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["VolunteerId"] = new SelectList(_context.Volunteer, "Id", "Id", @event.VolunteerId);
-            return View(@event);
+            return View();
         }
 
         // GET: Events/Delete/5

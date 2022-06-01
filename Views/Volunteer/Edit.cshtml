@@ -13,10 +13,8 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            
-        @await Html.PartialAsync("_CreateEditPartial")
 
-
+            @await Html.PartialAsync("_CreateEditPartial")
         </form>
     </div>
 </div>
@@ -25,18 +23,9 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@* @foreach (var event in Model.Events)
-{
-    <div class="row">
-        <div class="col-md-4">
-            <div>
-                @event.Title
-            </div>
-        </div>
-    </div>
-} *@
+
 
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

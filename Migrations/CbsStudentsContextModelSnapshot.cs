@@ -49,7 +49,7 @@ namespace cbsStudents.Migrations
                             CommentId = 1,
                             PostId = 1,
                             Text = "Hello",
-                            TimeStamp = new DateTime(2022, 6, 1, 16, 19, 48, 883, DateTimeKind.Local).AddTicks(9513),
+                            TimeStamp = new DateTime(2022, 6, 1, 20, 23, 11, 722, DateTimeKind.Local).AddTicks(1126),
                             UserId = "1"
                         },
                         new
@@ -57,7 +57,7 @@ namespace cbsStudents.Migrations
                             CommentId = 2,
                             PostId = 1,
                             Text = "Hello again",
-                            TimeStamp = new DateTime(2022, 6, 1, 16, 19, 48, 883, DateTimeKind.Local).AddTicks(9517),
+                            TimeStamp = new DateTime(2022, 6, 1, 20, 23, 11, 722, DateTimeKind.Local).AddTicks(1128),
                             UserId = "2"
                         },
                         new
@@ -65,7 +65,7 @@ namespace cbsStudents.Migrations
                             CommentId = 3,
                             PostId = 2,
                             Text = "Hi",
-                            TimeStamp = new DateTime(2022, 6, 1, 16, 19, 48, 883, DateTimeKind.Local).AddTicks(9519),
+                            TimeStamp = new DateTime(2022, 6, 1, 20, 23, 11, 722, DateTimeKind.Local).AddTicks(1131),
                             UserId = "1"
                         },
                         new
@@ -73,7 +73,7 @@ namespace cbsStudents.Migrations
                             CommentId = 4,
                             PostId = 3,
                             Text = "Bye",
-                            TimeStamp = new DateTime(2022, 6, 1, 16, 19, 48, 883, DateTimeKind.Local).AddTicks(9521),
+                            TimeStamp = new DateTime(2022, 6, 1, 20, 23, 11, 722, DateTimeKind.Local).AddTicks(1133),
                             UserId = "1"
                         });
                 });
@@ -163,7 +163,7 @@ namespace cbsStudents.Migrations
                         new
                         {
                             Id = 1,
-                            Created = new DateTime(2022, 6, 1, 16, 19, 48, 883, DateTimeKind.Local).AddTicks(9444),
+                            Created = new DateTime(2022, 6, 1, 20, 23, 11, 722, DateTimeKind.Local).AddTicks(1058),
                             Status = 0,
                             Text = "This is post 1",
                             Title = "Post no 1"
@@ -171,7 +171,7 @@ namespace cbsStudents.Migrations
                         new
                         {
                             Id = 2,
-                            Created = new DateTime(2022, 6, 1, 16, 19, 48, 883, DateTimeKind.Local).AddTicks(9480),
+                            Created = new DateTime(2022, 6, 1, 20, 23, 11, 722, DateTimeKind.Local).AddTicks(1099),
                             Status = 0,
                             Text = "This is post 2",
                             Title = "Post no 2"
@@ -179,7 +179,7 @@ namespace cbsStudents.Migrations
                         new
                         {
                             Id = 3,
-                            Created = new DateTime(2022, 6, 1, 16, 19, 48, 883, DateTimeKind.Local).AddTicks(9483),
+                            Created = new DateTime(2022, 6, 1, 20, 23, 11, 722, DateTimeKind.Local).AddTicks(1101),
                             Status = 0,
                             Text = "This is post 3",
                             Title = "Post no 3"
@@ -206,6 +206,43 @@ namespace cbsStudents.Migrations
                     b.HasIndex("VolunteerId");
 
                     b.ToTable("Task");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 3L,
+                            IsComplete = false,
+                            Name = "Buy decorations",
+                            VolunteerId = 1
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            IsComplete = false,
+                            Name = "Buy food",
+                            VolunteerId = 1
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            IsComplete = false,
+                            Name = "Invite guests",
+                            VolunteerId = 2
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            IsComplete = false,
+                            Name = "Choose music",
+                            VolunteerId = 3
+                        },
+                        new
+                        {
+                            Id = 7L,
+                            IsComplete = false,
+                            Name = "Book venue",
+                            VolunteerId = 4
+                        });
                 });
 
             modelBuilder.Entity("cbsStudents.Models.Entities.Volunteer", b =>
@@ -389,13 +426,13 @@ namespace cbsStudents.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "395c5961-c320-4b18-aace-019940b12b1e",
+                            ConcurrencyStamp = "d45bc73a-81e3-4151-b0ec-1356d2f7d19e",
                             Email = "chrk@kea.dk",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEFhFDW9o4Fs7HK7V8EOjSC7wB6HWa5/aNrS7IIeuT6JQ5PiE1eHjJ7DxBt9Cz538jg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELB84+Zfb0eGqhq6zbo0xyjKeYTJx6rcO+hWJPUyFmX1LSghh2H3H2z75JwPO1L5Zw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e4819b9f-628e-459e-b008-6fabe36e496a",
+                            SecurityStamp = "4dcfcfce-999a-43cb-a53f-aa08679bdfb4",
                             TwoFactorEnabled = false,
                             UserName = "chrk@kea.dk"
                         },
@@ -403,13 +440,13 @@ namespace cbsStudents.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7bd4b6af-a557-422f-b73f-19d6ecf03f12",
+                            ConcurrencyStamp = "5604bcf5-64bc-4e20-bfc2-f6b2c8828bac",
                             Email = "test@kea.dk",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAELqrwzbdWBES7y1ILABfoqjHP2GLCwmdt9A7bI6gEiSobWqNeWCLdXsUvkwfnmNIAg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEI/oMNgHOq/41qKwyLSjcDCpQjd6jlYlOfu28e7LEI2l+BOb7481dk4w3zBn/MmqxA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d536bbdc-bbd4-497c-b3cf-ae87b5974596",
+                            SecurityStamp = "43f44333-18c8-4b72-b18a-e31f18306eb0",
                             TwoFactorEnabled = false,
                             UserName = "test@kea.dk"
                         });
