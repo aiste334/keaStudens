@@ -16348,11 +16348,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Posts\\Test.cshtml",
-      "TargetPath": "Views\\Posts\\Test.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Posts\\Edit.cshtml",
       "TargetPath": "Views\\Posts\\Edit.cshtml",
       "FileKind": "mvc"
@@ -16375,11 +16370,6 @@
     {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Volunteer\\Create.cshtml",
       "TargetPath": "Views\\Volunteer\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Test\\WannaPlayDad2.cshtml",
-      "TargetPath": "Views\\Test\\WannaPlayDad2.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16475,6 +16465,11 @@
     {
       "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Events\\Delete.cshtml",
       "TargetPath": "Views\\Events\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Aiste\\Desktop\\.NET exam\\keaStudents\\Views\\Events\\_CreateEditEvent.cshtml",
+      "TargetPath": "Views\\Events\\_CreateEditEvent.cshtml",
       "FileKind": "mvc"
     },
     {

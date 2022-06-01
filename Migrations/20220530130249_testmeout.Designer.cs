@@ -3,6 +3,7 @@ using System;
 using CbsStudents.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace cbsStudents.Migrations
 {
     [DbContext(typeof(CbsStudentsContext))]
-    partial class CbsStudentsContextModelSnapshot : ModelSnapshot
+    [Migration("20220530130249_testmeout")]
+    partial class testmeout
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.5");
@@ -49,7 +51,7 @@ namespace cbsStudents.Migrations
                             CommentId = 1,
                             PostId = 1,
                             Text = "Hello",
-                            TimeStamp = new DateTime(2022, 5, 31, 18, 19, 3, 803, DateTimeKind.Local).AddTicks(3446),
+                            TimeStamp = new DateTime(2022, 5, 30, 15, 2, 49, 191, DateTimeKind.Local).AddTicks(6217),
                             UserId = "1"
                         },
                         new
@@ -57,7 +59,7 @@ namespace cbsStudents.Migrations
                             CommentId = 2,
                             PostId = 1,
                             Text = "Hello again",
-                            TimeStamp = new DateTime(2022, 5, 31, 18, 19, 3, 803, DateTimeKind.Local).AddTicks(3449),
+                            TimeStamp = new DateTime(2022, 5, 30, 15, 2, 49, 191, DateTimeKind.Local).AddTicks(6291),
                             UserId = "2"
                         },
                         new
@@ -65,7 +67,7 @@ namespace cbsStudents.Migrations
                             CommentId = 3,
                             PostId = 2,
                             Text = "Hi",
-                            TimeStamp = new DateTime(2022, 5, 31, 18, 19, 3, 803, DateTimeKind.Local).AddTicks(3452),
+                            TimeStamp = new DateTime(2022, 5, 30, 15, 2, 49, 191, DateTimeKind.Local).AddTicks(7636),
                             UserId = "1"
                         },
                         new
@@ -73,7 +75,7 @@ namespace cbsStudents.Migrations
                             CommentId = 4,
                             PostId = 3,
                             Text = "Bye",
-                            TimeStamp = new DateTime(2022, 5, 31, 18, 19, 3, 803, DateTimeKind.Local).AddTicks(3454),
+                            TimeStamp = new DateTime(2022, 5, 30, 15, 2, 49, 191, DateTimeKind.Local).AddTicks(7648),
                             UserId = "1"
                         });
                 });
@@ -163,7 +165,7 @@ namespace cbsStudents.Migrations
                         new
                         {
                             Id = 1,
-                            Created = new DateTime(2022, 5, 31, 18, 19, 3, 803, DateTimeKind.Local).AddTicks(3368),
+                            Created = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 0,
                             Text = "This is post 1",
                             Title = "Post no 1"
@@ -171,7 +173,7 @@ namespace cbsStudents.Migrations
                         new
                         {
                             Id = 2,
-                            Created = new DateTime(2022, 5, 31, 18, 19, 3, 803, DateTimeKind.Local).AddTicks(3418),
+                            Created = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 0,
                             Text = "This is post 2",
                             Title = "Post no 2"
@@ -179,28 +181,11 @@ namespace cbsStudents.Migrations
                         new
                         {
                             Id = 3,
-                            Created = new DateTime(2022, 5, 31, 18, 19, 3, 803, DateTimeKind.Local).AddTicks(3421),
+                            Created = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 0,
                             Text = "This is post 3",
                             Title = "Post no 3"
                         });
-                });
-
-            modelBuilder.Entity("cbsStudents.Models.Entities.Task", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("IsComplete")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Task");
                 });
 
             modelBuilder.Entity("cbsStudents.Models.Entities.Volunteer", b =>
@@ -384,13 +369,13 @@ namespace cbsStudents.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "880d53e1-c0de-4b2e-8272-06d476cc4031",
+                            ConcurrencyStamp = "e0628dee-3144-4d8f-9581-560e2a70e768",
                             Email = "chrk@kea.dk",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEG+jqg63veziBZ6hcC74Tvnk1VP2IT8goz7kyrksM+O+hR3FrXx1g9fxJwaWcfWf3w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIDIJtXKjGeYKbxIVJJKz5xopkBLAKjT/V+Svem/ytvsMHWxczxJk33CFP8pX9TFNA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7ba9e8e0-dd3a-409a-a795-b1a7a8c9949b",
+                            SecurityStamp = "00d9a49a-45bb-44ee-a49a-c729ea4b0873",
                             TwoFactorEnabled = false,
                             UserName = "chrk@kea.dk"
                         },
@@ -398,13 +383,13 @@ namespace cbsStudents.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "81569ddc-f01c-454e-89aa-1f06f5f597f0",
+                            ConcurrencyStamp = "2a7b495b-34ac-45ee-a9fc-e06030d2f9a0",
                             Email = "test@kea.dk",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEPhhazavhTIfWYb9osbz9uIWjXJI7enN0+o9KltPeKL8CmIERijbI/90gQBRDKAZFQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMDGKGtnDxAj7zaCdi3wFs2lWuQrpez0rXnzsZWgs+pgMrpDiPK4YjvD+jvagi9fsw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5957154b-fd4d-415a-9bd7-c0fde41b528c",
+                            SecurityStamp = "678fbab0-8e25-4ecc-89ab-e59d8bbdb120",
                             TwoFactorEnabled = false,
                             UserName = "test@kea.dk"
                         });

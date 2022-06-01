@@ -100,5 +100,7 @@ namespace CbsStudents.Data
             );
         }
 
+        public DbSet<cbsStudents.Models.Entities.Task> Task { get; set; }
+
     }
 }
