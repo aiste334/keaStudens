@@ -51,8 +51,6 @@ public class PostsController : Controller
     {
         if (ModelState.IsValid)
         {
-            // go ahead and save it into the database
-            // redirectToAction()
             IdentityUser user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
             post.UserId = user.Id;
 
@@ -63,8 +61,7 @@ public class PostsController : Controller
         }
 
         return View();
-        // Console.WriteLine(post.Text + " " + post.Title);
-        // return RedirectToAction("Test");
+
     }
 
     public IActionResult Edit(int id)
@@ -87,12 +84,4 @@ public class PostsController : Controller
 
         return View();
     }
-
-
-    public IActionResult Test()
-    {
-        ViewBag.Jesper = "Jesper is here!";
-        return View();
-    }
-
 }

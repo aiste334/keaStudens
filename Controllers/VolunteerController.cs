@@ -20,9 +20,24 @@ namespace cbsStudents.Controllers
         }
 
         // GET: Volunteer
-        public async Task<IActionResult> Index()
+        public IActionResult Index(string SearchString = "")
         {
-              return View(await _context.Volunteer.ToListAsync());
+            if (SearchString == null)
+            {
+                SearchString = "";
+            }
+            var volunteers = from v in _context.Volunteer select v;
+
+            volunteers = volunteers.Where(x => x.Name.Contains(SearchString) ||
+                x.LastName.Contains(SearchString)).Include(y => y.Events);
+
+            var vm = new VolunteerIndexVm
+            {
+                Volunteers = volunteers.ToList(),
+                SearchString = SearchString
+            };
+
+            return View(vm);       
         }
 
         // GET: Volunteer/Details/5
